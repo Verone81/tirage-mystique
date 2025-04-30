@@ -76,6 +76,12 @@
     <textarea name="question" placeholder="Une question ? Une intention ? Écris ce qui te vient..." rows="5"></textarea>
     <button type="submit">Envoyer mon intention</button>
   </form>
-
+  <p id="confirmationMessage" style="display: none;">Merci, ton tirage est en cours. Je reviendrai vers toi bientôt ! ✨</p>
+  <script>
+    document.querySelector('form').addEventListener('submit', function() {
+      document.querySelector('form').style.display = 'none';  // Cache le formulaire
+      document.getElementById('confirmationMessage').style.display = 'block';  // Affiche le message
+    });
+  </script>
 </body>
 </html>
