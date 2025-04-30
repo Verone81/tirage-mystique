@@ -6,72 +6,118 @@
   <title>Tirage de Cartes Mystique</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #1f1f1f, #2c2c2c);
-      font-family: 'Georgia', serif;
-      color: #f0e6d2;
+      background: radial-gradient(circle at top, #3a2e2e, #1a1414);
+      font-family: 'Garamond', 'Georgia', serif;
+      color: #fef7e2;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
     }
+  
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
+      color: #f9d36d;
+      text-shadow: 1px 1px 4px #000;
+      letter-spacing: 1px;
     }
+  
     p {
       margin-bottom: 2rem;
       font-size: 1.1rem;
       text-align: center;
-      max-width: 500px;
+      max-width: 600px;
+      line-height: 1.6;
     }
+  
     form {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(6px);
       padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      border: 2px solid #f9d36d;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(255, 223, 100, 0.2);
       width: 100%;
       max-width: 500px;
     }
+  
+    label {
+      display: block;
+      margin-top: 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #f9d36d;
+    }
+  
     input, textarea, button {
       width: 100%;
       padding: 0.8rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       border: none;
       border-radius: 0.5rem;
       font-family: inherit;
       font-size: 1rem;
     }
+  
     input, textarea {
-      background: #333;
-      color: #f0e6d2;
+      background: #2d2d2d;
+      color: #fef7e2;
+      border: 1px solid #555;
     }
+  
+    input[type="file"] {
+      background: transparent;
+      padding-left: 0;
+      color: #fef7e2;
+    }
+  
     button {
-      background: #a88b66;
-      color: white;
+      background: #d4a752;
+      color: #1a1414;
       font-weight: bold;
+      margin-top: 1.5rem;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
+  
     button:hover {
-      background: #c9a77e;
+      background: #f9d36d;
+      transform: scale(1.03);
     }
+  
     img {
-      width: 200px;
+      width: 220px;
       margin-bottom: 2rem;
       border-radius: 1rem;
+      box-shadow: 0 0 12px rgba(255, 223, 100, 0.4);
+    }
+  
+    #confirmationMessage {
+      margin-top: 2rem;
+      font-style: italic;
+      color: #fef7e2;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 1rem;
+      border-left: 4px solid #f9d36d;
+      max-width: 500px;
     }
   </style>
+  
+
 </head>
 <body>
 
-  <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=600&q=80" alt="Tirage de cartes mystique">
+  <img src="laforce.jpg" alt="Tirage de cartes mystique">
   
   <h1>Tirage Mystique</h1>
   <p>Pose une question ou laisse simplement ton prénom. Je tirerai les cartes et t’enverrai un message guidé par l’intuition.</p>
 
   <form name="tirage" netlify>
     <input type="text" name="prenom" placeholder="Ton prénom ou pseudo" required>
+    <label>Ta photo pour le tirage : <input type="file" name="photo" accept="image/*"></label>
     <input type="text" name="email" placeholder="Ton email" required>
     <textarea name="question" placeholder="Une question ? Une intention ? Écris ce qui te vient..." rows="5"></textarea>
     <button type="submit">Envoyer mon intention</button>
