@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tiragetarot.netlify.app/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://tiragetarot.netlify.app/formulaire.html</loc>
-    <priority>0.8</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://tiragetarot.netlify.app/index</loc>
+  <priority>1.0</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-05-29</lastmod>
+</url>
+<url>
+  <loc>http://tiragetarot.netlify.app/formulaire</loc>
+  <priority>1.0</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2025-05-29</lastmod>
+</url>
 </urlset>
