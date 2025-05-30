@@ -158,6 +158,18 @@
     <textarea name="description" placeholder="Décris-toi en quelques mots : ton apparence, ton énergie, ton état d’esprit actuel..." rows="4" required></textarea>
     <input type="text" name="email" placeholder="Ton email" required>
     <textarea name="question" placeholder="Une question ? Une intention ? Écris ce qui te vient..." rows="5"></textarea>
+    <fieldset style="margin-top: 1.5rem; border: none;">
+      <legend style="color: #f9d36d; font-weight: bold;">🔮 Choisis ton type de tirage (obligatoire) :</legend>
+      <label style="margin-top: 0.5rem;">
+        <input type="radio" name="type_tirage" value="boule_de_cristal" required>
+        Boule de cristal
+      </label>
+      <label style="margin-top: 0.5rem;">
+        <input type="radio" name="type_tirage" value="tarot_de_marseille" required>
+        Tarot de Marseille
+      </label>
+    </fieldset>
+    
     <button type="submit">Envoyer mon intention</button>
   </form>
 
