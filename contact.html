@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tirage Mystique</title>
+    <style>
+        body {
+            background: radial-gradient(circle at top, #3a2e2e, #1a1414);
+            font-family: 'Garamond', 'Georgia', serif;
+            color: #fef7e2;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #f9d36d;
+            text-shadow: 1px 1px 3px #000;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(249, 211, 109, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: none;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #f9d36d;
+            color: #1a1414;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eac85c;
+        }
+
+        a {
+            color: #f9d36d;
+            margin-top: 2rem;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📬 Contacte-moi</h1>
+<p>Pour toute question, collaboration, ou simplement partager un mot, n’hésite pas à m’écrire via ce formulaire.</p>
+
+<form action="mailto:tonadresse@email.com" method="POST" enctype="text/plain">
+    <label for="nom">Ton nom :</label>
+    <input type="text" id="nom" name="Nom" required>
+
+    <label for="email">Ton e-mail :</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="objet">Objet :</label>
+    <input type="text" id="objet" name="Objet" required>
+
+    <label for="message">Ton message :</label>
+    <textarea id="message" name="Message" rows="6" placeholder="Écris ton message ici..." required></textarea>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+<a href="index.html">⬅ Retour à l’accueil</a>
+
+</body>
+</html>
